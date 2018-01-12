@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/*****************************************************************
+初期設定
+*****************************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro' sans-serif;
+}
+
+body {
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+
+/*********** header ***********/
+
+header {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+#header-logo {
+  float: left;
+  margin: 40px 0 5px 20px;
+  max-width: 100%;
+}
+
+#header-logo img {
+  width: 120px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 70px 20px 5px 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+header nav ul li:first-child {
+  margin-left: 0;
+}
+
+header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*********** main ***********/
+
+#main {
+  margin: 140px 0 0;
+  padding: 0 20px;
+}
+
+#top img {
+  max-width: 100%;
+}
+
+#top a {
+  display: block;
+  width: 120px;
+  line-height: 45px;
+  font-size: 28px;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  margin: 20px;
+  float: right;
+}
+
+#top a:hover {
+  opacity: 0.6;
+}
+
+#top::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#about, #works {
+  max-width: 100%;
+  margin: 150px auto 0;
+  text-align: center;
+}
+
+#about h1, #works h1{
+  font-size: 36px;
+}
+
+#about img, .row {
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+#about p {
+  margin: 20px auto 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#about ul {
+  margin-left: 20px;
+}
+
+#about ul li {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#works img {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+#works img:last-child {
+  margin-bottom: 0;
+}
+
+#back-to-top {
+  display: none;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 36px;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/*********** footer ***********/
+
+footer {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*****************************************************************
+651px以上
+*****************************************************************/
+
+@media only screen and (min-width: 651px) {
+
+/*********** header ***********/
+
+  #header-logo img {
+    width: 170px;
+  }
+
+  header nav ul li {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+
+/*********** main ***********/
+
+  #main {
+    margin-top: 250px;
+  }
+
+  #top a {
+    line-height: 60px;
+    font-size: 36px;
+    width: 150px;
+  }
+
+  #about h1, #works h1{
+    font-size: 48px;
+  }
+
+  #about p, #about ul li {
+    font-size: 18px;
+  }
+
+
+  footer {
+    margin-top: 60px;
+  }
+
+}
+
+/*****************************************************************
+1000px以上
+*****************************************************************/
+
+@media only screen and (min-width: 1000px) {
+
+  body {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+/*********** main ***********/
+
+  #main {
+    width: 1000px;
+    margin-left: -20px;
+  }
+
+}
